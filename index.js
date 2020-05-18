@@ -6,6 +6,4 @@ const bot = new TelegramBot(TOKEN, {
     polling: true
 })
 
-bot.on('message', (msg) => {
-    console.log(msg)
-})
+bot.on('message', (msg) => { console.log(msg.text) })
